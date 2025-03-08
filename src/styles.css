@@ -1,0 +1,241 @@
+/* Updated styles.css with improved spacing */
+
+:root {
+    --header-bg: #1f3d7a;
+    --text-primary: #2c3e50;
+    --border-color: #e0e0e0;
+    --accent-blue: #1e88e5;
+    --button-bg: #f5f5f5;
+    --green: #4CAF50;
+    --orange: #FF9800;
+    --red: #F44336;
+  }
+  
+  /* Base Styles */
+  .codeforces-container {
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 14px; /* extra padding around the container */
+    margin: 0px 125px;
+  }
+
+  /* For small devices */
+  @media screen and (max-width: 600px) {
+    .codeforces-container {
+      margin: 0 10px;
+    }
+  }
+  
+  /* Sections */
+  .contest-section,
+  .problem-section,
+  .rating-section,
+  .blog-section {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px; /* add spacing between sections */
+  }
+  
+  .section-title {
+    background: #f8f9fb;
+    padding: 10px 12px; /* increased padding */
+    border-bottom: 1px solid var(--border-color);
+    font-size: 26px; /* slightly larger text */
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Contest Section */
+  .contest-list {
+    padding: 20px; /* increased padding */
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+  
+  .contest-item {
+    padding: 20px; /* increased padding for more space */
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s;
+    margin-bottom: 16px; /* add vertical spacing between items */
+  }
+  
+  .contest-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contest-item:hover {
+    background: #f8f9fb;
+  }
+  
+  .contest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px; /* increased margin */
+    font-size: 15px;
+  }
+  
+  .contest-status {
+    background: var(--green);
+    color: white;
+    padding: 4px 14px; /* increased padding */
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .contest-name {
+    font-size: 18px; /* increased text size */
+    font-weight: 500;
+    color: var(--accent-blue);
+    margin-bottom: 10px; /* increased margin */
+  }
+  
+  .contest-details {
+    display: flex;
+    gap: 32px; /* increased gap */
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 16px; /* increased margin */
+  }
+  
+  .clock-icon {
+    width: 20px; /* slightly larger icon */
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px; /* increased space next to icon */
+  }
+  
+  .register-button {
+    background: var(--accent-blue);
+    color: white;
+    padding: 4px 8px; /* increased padding */
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 1px; /* add margin above button */
+    display: inline-block;
+  }
+  
+  /* Problem Section */
+  .problem-section .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .problem-search {
+    font-size: 16px;
+    padding: 5px 8px; /* increased padding */
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 260px; /* slightly wider search input */
+  }
+  
+  .problem-table {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+  }
+  
+  .problem-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .problem-table th,
+  .problem-table td {
+    padding: 20px 32px; /* increased padding in table cells */
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .problem-table th {
+    background: #f8f9fb;
+    font-weight: 600;
+  }
+  
+  .problem-id {
+    color: var(--accent-blue);
+    font-weight: 500;
+  }
+  
+  .difficulty-circle {
+    display: inline-block;
+    width: 14px; /* slightly larger circle */
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 14px; /* increased spacing */
+  }
+  
+  /* Rating Section */
+  .rating-list {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    padding: 20px; /* increased padding */
+  }
+  
+  .rating-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px; /* increased padding for more space */
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .rank {
+    width: 40px;
+    color: #666;
+  }
+  
+  .user {
+    flex: 1;
+    font-weight: 500;
+    margin-left: 10px; /* added margin for separation */
+  }
+  
+  .rating-value {
+    color: var(--orange);
+    font-weight: 600;
+  }
+  
+  .rating-change {
+    margin: 0 20px; /* increased horizontal margin */
+    font-weight: 500;
+  }
+  
+  /* Blog Section */
+  .blog-list {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    padding: 20px; /* increased padding */
+  }
+  
+  .blog-item {
+    padding: 20px 0; /* increased padding */
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .blog-title {
+    font-weight: 500;
+    color: var(--accent-blue);
+    margin-bottom: 10px; /* increased margin */
+  }
+  
+  .blog-author {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* increased gap between elements */
+  }
+  
+  /* Scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+  }
+  

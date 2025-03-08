@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-100;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply text-gray-600 leading-relaxed;
+  }
+  .prose p {
+    @apply mb-4;
+  }
+}
